@@ -1,0 +1,50 @@
+import UIKit
+
+let edad = 20
+let nombre = "Abel Galarza Martinez"
+let happy = "on"
+
+//funciones//
+
+func hi(){
+    let nombre = "Marduk"  //pensaria que aqui no se puede por que es inamovible por el let,pero cada funcion tiene su contexto, por eso se puede "cuando le mandan a imprimir un identificador, lo primero que busca es algo en el contexto que se llame asi"
+    
+    //"cada funcion tiene su contexto, en el mismo contexto no se pueden manejar dos cosas iguales"
+    // si no estuviera declarado "nombre" dentro de la funcion, el programa agarraria el valor de la parte de arriba
+    
+    //ETIQUETA DE PARAMETRO:
+    //NOMBRE DE PARAMETRO:  ambos definen al argumento
+    print("que tal " + nombre)  // contatenar
+    print("que tal \(nombre)")  // interpolar
+    print ("que tal", nombre)
+    
+}
+hi()
+//otra forma de declarar
+
+func hello( nombre:String){
+    
+}
+hello(nombre:"judy")
+
+func hola(_ name:String){
+    hola("judyy")
+}
+
+func hallo(nombre:String) ->String{
+    let saludo = "hola" + nombre
+    return saludo
+}
+let saludo = hello(nombre:nombre) //esta es pregunta de examen, el por que de cada name, si complia o no (si complila)
+
+//EJEMPLO PARA USAR CAJAS
+
+// muchas de las operaciones yta estan echas, podemos checar la documentacion y que ya este echa, como por ejemplo poner la fecha que se ejempkifica mas abajo.
+
+// CAJA: propiedades y metodos
+let birthday = Date() //esta es una funcion que sale de la documentacion, en la parte de windows, y luevo developer documewntation, y buscamos para la parte de fecha (debe de etsar de afuerza el import hasta arriba del codigo, si no esta, no funciona
+print(birthday) //este nos arroja la fecha actual enla hora del meridiano 0)
+
+let cumpleaños = Date(timeIntervalSinceNow: 3600)
+print (cumpleaños) //en este caso esta funcion de la caja, nos marca la fecha y hora del meridiano, MAS el intervalo de tiempo que nosotros lo indicamos (3600)
+//las cadenas tambien pueden ser unas cajas, si se hace una caja y se declara, se la asigna un numero
