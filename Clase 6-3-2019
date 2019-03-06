@@ -1,0 +1,164 @@
+import UIKit
+
+// funcionamiento de los if and else
+
+var str = "Hello, playground"
+ let videoLegth = 3
+let videoToShort = "MUY PEQUEÑO"
+let videorasonablesice = "exacto"
+"hola" > "Hola"
+
+1.4 == 1
+
+if videoLegth < 10 {
+    print(videoToShort)
+}
+else if (videoLegth > 1000)
+{
+    print("demasiado largo")
+}
+else {
+    print (videorasonablesice)
+}
+
+// ejemplo
+
+let a = 20
+let b = 30
+let c = 20
+
+//si a es igual a c, imprimir "todos son iguales"
+//si a es menor que b, imprimir  "b esta delante de a"
+//si b es mayor que a, imprimir "a pierde contra b"
+//si a es menor o igual que c, imprimir "a pierde o empata con c"
+
+if a == c {
+    print("todos son iguales")
+}
+else if a < b {
+    print("b esta delante de a")
+}
+else if b > a {
+    print ("a pierde  contra b")
+}
+else if a <= c {
+    print("a pierde o empata con c")
+}
+else {
+    print ("WTF")
+}
+
+//ejemplio dos para if and else
+
+import Foundation
+
+let secretWord = "banana"
+let guess = "manzana"
+
+if secretWord == guess {
+    print ("adivinaste")
+}
+if secretWord != guess {
+    print ("no adivinaste")
+}
+
+
+//reescribir de forma que no se usen dos if
+
+if secretWord == guess {
+    print ("adivinaste")
+}
+else {
+    print ("no adivinaste")
+}
+
+// operador resto
+// es lo mismo que el modulo en otros lenguajes, lo que hace es darnos el residuo de una divicion
+
+4 % 2
+-4 % 2
+-4 % 3
+
+
+// en este ejercicio veremos si un año es biciesto, hay que ver si un nuero es divisible entre 4, y acomodar reglas para ver si el año en realidad es bicicesto
+/*
+ ¿el año es divisible por 4?
+ de ser asi, es divisible entre 100?
+ DE NO SER ASI, ES UN AÑO BICIESTP
+ de dser asi, es divisible entre 400?
+ de no ser asi, NO ES UN AÑO BICIESTP
+ de ser asi, definitivamente es un año biciesto
+ 
+ */
+let year = 2000
+func islepyear(_ year: Int) -> Bool {
+    return false
+}
+
+if year % 4 == 0 {
+    if year % 100 == 0 {
+        if year % 400 == 0 {
+            print("el año es biciesto")
+        }
+        else {
+            print("el año no es biciesto")
+        }
+    }
+    else {
+        print("el año no es biciesto")
+    }
+}
+else {
+    print ("el año no es biciesto")
+}
+
+//instancias
+var magic = "ahora lo ves"
+// magic seria la istancia, y le estamos plicando metodos para ver lo que hay dentro de esa istancia
+magic.isEmpty // es un metodo de tipo  nooleano el cual te dice si la instancia esta vacia con un "si" o un "no"
+magic.removeAll()  // remueve todos los elementos que tenga la instancia
+magic.isEmpty
+magic.count  //este metodo nos da el numero de caracteres que hay en la instancia
+
+//otra instancia por ejemplo es con un entero
+
+
+// SI QUIERO SABER LO QUE HACE UN METODO, SE PRESIONA LA TECLA OPTION Y SE LE DA CLICK SOBRE EL METODO PARA SABER LO QUE HACEEEE, SI NO LO PODEMOS ENCONTRAR EN "VENTANA"- "DOCUMENTACION"- Y LO BUSCO EN EL BUSCADOR, ALLI VA TODO LO QUE SE DEBE DE SABER DE SWIFT
+
+var numero = 3
+//numero.isEmpty
+
+// hya otra forma de declarar variables,
+
+let nombre = String()
+let nimbre2 = String("Abel")
+
+nombre
+nimbre2
+
+//vamos que los inicializadores que le dan un valor vacio a una instancia, empiezan com mayusculas como es el caso de la string
+
+
+//ARREGLOS
+
+var compras = ["comida","ropa"]
+// cuando agreagamos una instancia con conjunto, podemos analizarla como el conjunto cuando la ponemos entre corchetes
+compras.count  // COUNT SERIA UNA PROPIEDA POR QUE SOLO NOS PROPORCIONA INFORMACION DE NUETRA INSTANCIA
+compras.append("bolsas") //append agrega un elemento a nuestro conjunto
+compras.insert("iphone",at : 0) // en el caso de insert, este nos agrega el elemento en la posicion en la que nosotros queremos, 0,1,2, etc
+
+compras += ["aguas","bebida","pantalon"] //este es otra forma de agregar, es parecido para el append pero nos agrega un bunche en la posicion ultima
+
+
+// estos son metodos por que afectan a una instancia, TODO LO QUE AFECTA A UNA INSTANCIA ES UN METODO
+
+
+compras.remove(at:0)
+// este nos elimina el elemento en la posicion que queremos, se ve abajo:
+
+compras
+
+
+//el mas peligrosoooooo
+
+compras.removeAll() //este nos elimina los elementos de nuestra lista
