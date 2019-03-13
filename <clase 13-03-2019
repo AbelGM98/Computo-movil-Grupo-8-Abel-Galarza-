@@ -1,0 +1,31 @@
+import UIKit
+
+var str = "Hello, playground"
+
+
+func orden(platillo: String) -> String {
+    if platillo == "sopa"{
+        return "calienteee"
+    }
+    else {
+        return "no esta en el menu"
+    }
+}
+// si a la orden le damos el valor de soopa, nos devolvera klo que esta dentro del if and else, que oasa si lo pongo de esta forma
+
+orden(platillo: "Sopa") //nos regresa que no exixte, para solucionar esto, es¡xisten los enumeradores
+
+enum Platillo {
+    case sopa, pez, res, pollo
+    //es como un nuevo tipo de dato, ahora podemos editar nuestra funcion
+}
+func orden(platillo:Platillo)  -> String {
+    switch platillo {
+    case .sopa:
+        print("esta caliente")
+    default:
+        print("no esta en el platillo")
+        
+        //se usan mucho para evitar hacer menos definido, como por ejemplo una comparacion esta muy definido, una mayuscula puede arruinar todo, pero en el caso de un enum, topdop se tiene  bioen definido y es una buena herramienta para ahorrar codigo.
+    }
+}
