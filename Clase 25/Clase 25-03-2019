@@ -1,0 +1,33 @@
+MVC
+
+Son tres capas, modelo, vista y controlador.
+
+Modelo:proposito de la aplicacion, lee y escribe datos, conectividad (practicamente a esa capa se le a¡avientan los datos)
+
+Vista: Presentar el dato al usuario y manejar la interaccion del usuario. "solo va a presentar la informacion, pero no entendera
+lo que esta presentando
+
+Controlador: Es un puente en ¡tre el modelo y la vista, se asegura de asignar las tareas a los elementos encargados de hacer las
+tareas.
+
+Esto nos ayuda a :
+ºLa separacion del codigo
+ºManejar vistas
+
+Elementos necesarios para hacer una aplicacion.
+La idea, problematica, estadp de satisfaccion.
+
+Paso1 : Sketch, wireframe, mockup, prototipe.
+
+Sketch: Dibujo simple de la interfaz, como se visualizaria la aplicacion., como tipo comic, que pasaria con el usuario.
+Wireframe: Dibujo tecnico de un plan visual de accion, se pienza en e telefono, las sobrepantallas. Muestra esquema de oantallas
+          y navegacion, es un mapa para la aplicacion, esto es OBLIGATORIO para entregar. contiene elementos de pantalla,
+          imagenes, botones, campos, etc., en este no van elementos de diseño finales (iconos, colores, logos, etc)
+Ninja mockup(Aplicacion que ayuda a ¡l desarrollo de las wireframes)
+Mockup: Poner colores, fuentes, imagenes, etc. "ponerle flores as you remember well"
+Proptotipo: Ya va a tener cierta interaccion, incluir simulaciones cuano¡d se hacer las graficas, cuando se hace la app, como un
+            video o imagen de lo que hace la app, litera "animaciones (No son obligatorios de entregar).
+
+Repasar parte de modelod e negocvios, de mercado de apps, 
+por que hay mas app android que ios, que sistemas operativos, que lenguajes de programacion, que es computo movil, etc.
+No echar choro en preguntas abiertas.
