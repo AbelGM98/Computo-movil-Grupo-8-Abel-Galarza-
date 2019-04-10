@@ -1,0 +1,70 @@
+import UIKit
+
+var str = "Hello, playground"
+//estructuras
+
+struct Temperatura {
+    var celsius:Double
+    var farenheit:Double{
+        return celsius * 1.8 + 32
+    }
+    
+    //contructor
+    //init (celsius:Double){
+       // self.celsius = celsius
+        //el self lo que hace es especificar que se refiere a la instancia de arriba, la tipo var, no los valores para inicializar
+   // }
+}
+
+var instanciaTemperatura = Temperatura(celsius: 10.0)
+
+instanciaTemperatura.celsius
+instanciaTemperatura.farenheit // si le agrremamos un ciclo for a esto, se puede notar claramente como va agregando de uno en uno
+
+import UIKit
+
+var str = "Hello, playground"
+
+struct Temperatura {
+    static var boilingPoint=100
+    var celsius: Double
+}
+var instanciaTemp1 = Temperatura(celsius: 200.00)
+Temperatura.boilingPoint
+
+var instanciaTemp2 = Temperatura(celsius: 400.0)
+
+
+Temperatura.boilingPoint = 5000
+
+
+
+let smallerNumber = Double.minimum(100, -1000)  //en este caso este es un metodo, es como una propiedad, pero que se le aplica a un tipo de datp, no a una instancia
+//todo en swift son tipos de dato, hay tipos de datos que vbienen de cajon (int, boool, double, etc) y los que nosotros creamos
+
+//los tipos de datos que nosotros creamos pueden ser
+
+//enumeradores
+//estructuras-son las uqe mas se usan en swift, por ejemplo  int es una estructura, string tambien es una esturctura, son muy usadas y oo unico que no tienen disponible son las herencias. Si a un enumareador se iguala a otro, uno va a cambiaerse, pero el inicial se queda igual, a diferencia de una clase que aqui se manejamn APUNTADORES y si cambias una, tambien se cambia la otra. Ademas las estructuras como hacen copia, estas ocupan un espacio de memoria independiente.
+//Clases
+//los anteriores son tipos de datos creados por nosotros
+
+
+
+//: [Previous](@previous)
+
+import Foundation
+
+var str = "Hello, playground"
+
+//: [Next](@next)
+
+struct Odometro {
+    var count:Int=0
+    mutating func incremente () { //mutating lo que hacer es que normalmente si este swift hace que el count se baja como im¡nmutable (let), oero si quieres que se modifique, se le especifica, en este caso se le agrega el mutatinf¡+g que lo camia de inmutable a  modificable.
+        count += 1
+    }
+}
+
+var instanciaOdometro = Odometro(count: 10)
+instanciaOdometro.incremente()
